@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Speech API</title>
+		<link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <blockquote id="speak" cite="https://developer.mozilla.org/ja/docs/Web/API/Web_Speech_API">
+      <h1>Web Speech API</h1>
+
+			<p>
+				ウェブ音声 API (Web Speech API) で、音声データをウェブアプリに組み入れることができます。 ウェブ音声 API は、SpeechSynthesis （音声合成、Text-to-Speech）と SpeechRecognition （非同期音声認識、Asynchronous Speech Recognition）の 2 つの部分から成り立っています。
+			</p>
+
+			<section>
+				<h1>ウェブ音声 API のコンセプトと使用法</h1>
+				<p>ウェブ音声 API は、ウェブアプリが音声データを扱えるようにします。 この API には 2 つの構成要素があります。</p>
+				<ul>
+					<li>音声認識は SpeechRecognition インターフェイス経由でアクセスされます。これは、音声入力（通常は端末の既定の音声認識サービス）から音声の文脈を認識し、適切に応答する機能を提供します。 通常は、インターフェイスのコンストラクターを使用して新しい SpeechRecognition オブジェクトを生成します。このオブジェクトは、端末のマイクを通して入力された音声を検知するための、いくつものイベントハンドラーを持ちます。 SpeechGrammar インターフェイスは、あなたのアプリが認識すべき特定の文法群のコンテナーを表します。 文法は、 JSpeech Grammar Format (JSGF) を使用して定義されています。</li>
+					<li>音声合成は、 SpeechSynthesis インターフェイス経由でアクセスされます。これは、プログラムに、そのテキストコンテンツを読み上げる機能を提供します（通常は端末の既定の音声合成を経由）。異なる種類の音声は、 SpeechSynthesisVoice オブジェクトで表され、発話してほしいテキストの様々な部分は、 SpeechSynthesisUtterance オブジェクトで表されます。これらを SpeechSynthesis.speak() メソッドに渡すことによって発話されます。
+					</li>
+				</ul>
+				<p>これらの機能の使い方についての詳細は、ウェブ音声 API の使用 を参照してください。</p>
+			</section>
+
+			<small>
+				<a href="https://developer.mozilla.org/ja/docs/Web/API/Web_Speech_API">[引用] MDN Web Docs: Web Speech API</a>
+			</small>
+
+    </blockquote>
+		<aside id="transpose">
+			<div>
+				<button onclick="restart()">◀︎◀︎ 最初から再生</button>
+				<button onclick="playOrPause()">▶︎|| 再生・一時停止</button>
+			</div>
+		</aside>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

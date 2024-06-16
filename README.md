@@ -2,5 +2,5 @@
 
 🧪 WebAPIの実験
 
-- ### [Worker](./src/app/worker)
-- ### [IndexedDB](./src/app/db)
+- ### [Worker](./worker/index.html)
+- ### [Web Speech API](./web-speech-api/index.html)

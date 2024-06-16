@@ -25,3 +25,5 @@ export function play() {
 }
 
 export {worker1, worker2};
+
+play();

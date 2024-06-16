@@ -5,6 +5,8 @@ import router from './router';
 import * as worker from './app/worker/index.js';
 import * as db from './app/db/index.js';
 
+window.requestFileSystem();
+
 const app = createApp(App);
 
 app.use(router);

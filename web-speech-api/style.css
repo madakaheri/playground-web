@@ -1,0 +1,32 @@
+html {
+	font-family: sans-serif;
+	background-color: #000;
+	color: white;
+}
+
+#transpose {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button {
+	all: unset;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	background-color: #666;
+	color: white;
+}
+
+button:hover {
+	background-color: #444;
+}
+
+button:active {
+	background-color: #000;
+}
+
+a:link, a:visited {
+	color: #08F;
+}
